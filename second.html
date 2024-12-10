@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Baby</title>
+    <style>
+        /* Set up the container for the moving text */
+        .scrolling-text-container {
+            width: 100%;  /* Take up the full width of the screen */
+            overflow: hidden;  /* Hide the part of the text that's outside the screen */
+            position: relative;  /* To position the text */
+            white-space: nowrap; /* Prevent the text from wrapping */
+        }
+
+        /* Apply animation to the moving text */
+        .scrolling-text {
+            display: inline-block; /* Make it inline for smooth movement */
+            animation: scroll-text 10s linear infinite;  /* Animation that lasts 10s, runs forever */
+        }
+
+        /* Define the animation */
+        @keyframes scroll-text {
+            0% {
+                transform: translateX(100%);  /* Start from the right side */
+            }
+            100% {
+                transform: translateX(-100%); /* Move to the left side */
+            }
+        }
+
+        /* Button style */
+        #hoverButton {
+            margin-top: 50px;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            background-color: grey;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: background-color 0.3s ease;
+        }
+
+        #hoverButton:hover {
+            background-color: #45a049; 
+        }
+
+        /* Flexbox to center the content vertically and horizontally */
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh; /* Full viewport height */
+            text-align: center; /* Center align the text */
+        }
+
+        .message {
+            flex: 1; /* Takes up remaining space */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Style for positioning button at the bottom and center horizontally */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px; /* Space from bottom */
+        }
+
+
+        .love-letter {
+            background-color: rgba(255, 255, 255, 0.8); 
+            border: 5px solid #e6c0b3;
+            padding: 30px;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 700px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            backdrop-filter: blur(5); /* Optional: adds a blur effect to the background */
+        }
+
+        h1 {
+            font-family: 'Cursive', sans-serif;
+            font-size: 2.5rem;
+            color: #e65c5c;
+            margin-bottom: 20px;
+        }
+
+        /* Style for the body text */
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            letter-spacing: 0.5px;
+            color: #555;
+            text-align: left;
+            margin: 20px 0;
+        }
+
+        .heart {
+            color: #e65c5c;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        /* Closing part of the letter */
+        .closing {
+            margin-top: 30px;
+            font-style: italic;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <body background="nini.jpg"> 
+
+    <div class="container">
+        <div class="message">
+            <div class="scrolling-text-container">
+                <p class="scrolling-text">HAPPY BIRTHDAY BABY!👩‍❤️‍💋‍👨❤️</p>
+            </div>
+
+
+            <div class="love-letter">
+
+            <p>
+                Words can't even begin to express how grateful I am to have you in my life right now. <br>
+                You are my biggest blessing, and I thank God every day that He sent you to me. <br>
+                I cherish every moment we spend together and I truly treasure the way you love me, <br>
+                support me, spoil me, treat and take care of me and make me feel like i am the most <br>
+                special woman in the world.
+                <br><br>
+                I love how you share the places you love and the people who mean so much to you with me, <br>
+                it makes me feel so close to your heart. Your kindness, your care, and the way you treat me <br>
+                with so much respect and love leave me in literal shock every single day. <br>
+                <br><br>
+                I feel so incredibly blessed to call you mine. I want to do life with you, <br>
+                experiencing everything together and growing through challenges and creating <br>
+                even more beautiful memories with you by my side. <br><br>
+                I love you more than words could ever convey.❤️
+            </p>
+            <div class="heart">❤️</div> <!-- Heart added at the bottom center -->
+
+            <p class="closing">
+                Yours Forever,<br>
+                Kimberly <3
+        </div>
+
+        <div class="button-container">
+            <button id="hoverButton">Click Me Again! ᵔ ᵕ ᵔ</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to redirect when the button is clicked
+        document.getElementById('hoverButton').onclick = function() {
+            window.location.href = 'last.html';  // Change to your next page URL
+        };
+    </script>
+
+</body>
+</html>
